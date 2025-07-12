@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: youtube-mp3-converter
+    env: python
+    buildCommand: ./build.sh && pip install -r requirements.txt
+    startCommand: python app.py
